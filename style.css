@@ -1,0 +1,519 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header, .main-nav, .about-section, .skills-section, .projects-section, .contact-section, .main-footer {
+  padding: 20px;
+  text-align: center;
+}
+.top-header{
+  padding: 10px;
+  text-align: right;
+}
+
+.top-header .container, .main-header .container, .main-nav ul.container, .about-section .container, .skills-section .container, .projects-section .container, .contact-section .container, .main-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.main-header .home-photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header h1, .main-header p {
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007BFF;
+}
+.contact-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.contact-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-section p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  gap: 20px; /* Add space between the fields */
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 70%; /* Adjusted width */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section button {
+  width: 20%; /* Adjusted width for the button */
+  text-align: center;
+  padding: 15px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222324;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #12110f;
+}
+/* General styles for the "About Me" section */
+/* About Me Section */
+.about-me-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* Paragraph styling */
+.about-me-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: justify; /* Aligns text neatly */
+}
+
+/* List styling */
+.about-me-section ul {
+  list-style: none; /* Remove default bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-section ul li {
+  font-size: 1em;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative; /* For custom bullets */
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Custom bullet styling */
+.about-me-section ul li::before {
+  content: '•'; /* Use a dot as the bullet */
+  position: absolute;
+  left: 0;
+  font-size: 1.5em;
+  color: #2f2f30; /* Add a vibrant color for the bullet */
+}
+
+/* Highlight the last list item */
+.about-me-section ul li:last-child {
+  font-weight: bold;
+  color: #222;
+}
+/* Skills Section */
+.skills-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section container */
+.skills-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section heading */
+.skills-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Skills list layout */
+.skills-section .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Skill item styling */
+.skills-section .skill-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* Fixed width for uniform cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-section .skill-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill item headings */
+.skills-section .skill-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #415a77; /* Highlight color */
+}
+
+/* Skill item descriptions */
+.skills-section .skill-item p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+/* styles.css */
+.workflow-section {
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #c4e0d9;
+}
+
+.workflow-content {
+  max-width: 500px;
+}
+
+.workflow-title {
+  font-size: 2rem;
+  color: #1b1b1b;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.workflow-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.workflow-btn {
+  display: inline-block;
+  background-color: #1b1b1b;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workflow-btn:hover {
+  background-color: #333;
+}
+
+.workflow-info {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.workflow-info-item .info-title {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.workflow-info-item .info-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.workflow-image {
+  flex-shrink: 0;
+}
+
+.workflow-image .dashboard-image {
+  width: 90%; /* Adjust the size to medium */
+  max-width: 600px; /* Prevent the image from growing too large on larger screens */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure proper alignment */
+}
+
+.workflow-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.workflow-info-item {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-info-item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.workflow-info-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Additional colors for new workflow info items */
+.info-blue {
+  background-color: #e6f2ff; /* Light blue */
+  border-left: 4px solid #007bff; /* Blue border */
+}
+
+.info-green {
+  background-color: #e9f7e9; /* Light green */
+  border-left: 4px solid #28a745; /* Green border */
+}
+.workflow-section1 {
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fefaeb;
+}
+
+.workflow-content1 {
+  max-width: 500px;
+}
+
+.workflow-title1 {
+  font-size: 2rem;
+  color: #1b1b1b;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.workflow-description1 {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.workflow-btn1 {
+  display: inline-block;
+  background-color: #1b1b1b;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workflow-btn1:hover {
+  background-color: #333;
+}
+
+.workflow-info1 {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.workflow-info-item1 .info-title1 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.workflow-info-item1 .info-description1 {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.workflow-image1 {
+  flex-shrink: 0;
+}
+
+.workflow-image1 .dashboard-image1 {
+  width: 100%; /* Adjust the size to medium */
+  max-width: 600px; /* Prevent the image from growing too large on larger screens */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure proper alignment */
+}
+
+.workflow-info-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.workflow-info-item1 {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-info-item1 h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.workflow-info-item1 p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Additional colors for new workflow info items */
+.info-blue1 {
+  background-color: #e6f2ff; /* Light blue */
+  border-left: 4px solid #007bff; /* Blue border */
+}
+
+.info-green1 {
+  background-color: #e9f7e9; /* Light green */
+  border-left: 4px solid #28a745; /* Green border */
+}
+.bore{
+  text-align: center;
+}
+.workflow-section2 {
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #ffe1cf;
+}
+.mini-projects {
+    text-align: center;
+    padding: 50px 5px;
+    background:#ffffff;
+    color: black;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+    color: black;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #010101;
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.4;
+}
